@@ -3,7 +3,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 function Navbar() {
   return (
-    <div className=" lg: flex justify-between items-center bg-teal-50">
+    <div className=" lg: flex justify-between items-center  bg-teal-50 ">
       <div className="w-32 bg-white pl-5 pt-3">
         <img
           className="w-20"

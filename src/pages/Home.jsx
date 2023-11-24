@@ -71,10 +71,10 @@ function Home() {
           {/* last cards */}
           <div className="flex  flex-col lg:flex-row  items-center justify-center px-20 py-9 gap-6 shadow-md">
             <Lastcards
-              btn={<Connectbtn color="bg-lime-300" />}
+              btn={<Connectbtn color="bg-lime-300" title="Free Forever" />}
               title="Free Starter"
               subtitle="The quickest and easiest way to try protocols with basic functionalitiies "
-              button={<Button color="bg-purple-400" />}
+              button={<Button color="bg-lime-300" />}
               category="What you'll get"
               user="upto 8 users"
               store="Upto 3gb storage"
@@ -83,10 +83,10 @@ function Home() {
             />
 
             <Lastcards
-              btn={<Connectbtn color="bg-lime-300" />}
+              btn={<Connectbtn color="bg-cyan-600" title="Lets Connect" />}
               title="Enterprise plan"
               subtitle="Effortiessly customise and fine-tune services as your needs shifts,ensuring the perfect tools for succesS "
-              button={<Button color="bg-cyan-500" />}
+              button={<Button color="bg-cyan-600" />}
               category="What you'll get"
               user="upto 8 users"
               store="Upto 3gb storage"

@@ -1,11 +1,12 @@
 import React from "react";
 
-function Connectbtn({ color }) {
+function Connectbtn({ color, title }) {
   return (
     <div>
-      <button
-        className={"px-2 py-1  rounded-md  text-sm bg-slate-500" + color}
-      ></button>
+      <button className={"px-5 py-1  rounded-xl  text-sm " + color}>
+        
+        {title}
+      </button>
     </div>
   );
 }
