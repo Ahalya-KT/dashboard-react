@@ -16,7 +16,7 @@ function Lastcards({
   about,
 }) {
   return (
-    <div className="flex  lg:flex-row items-center w-full justify-center px-5   lg:h-56  bg-white shadow-md  gap-10">
+    <div className="flex lg:flex-row flex-col items-center w-full justify-center px-5 py-5 lg:h-56  bg-white shadow-md  gap-10">
       <div className="flex flex-col gap-4 lg:w-1/2  ">
         {/* connect btn */}
         <p>{btn}</p>

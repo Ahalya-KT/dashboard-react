@@ -69,7 +69,7 @@ function Home() {
           </div>
 
           {/* last cards */}
-          <div className="flex flex-row  items-center justify-centerlg:px-20 lg:py-9 px-8 gap-6 shadow-md">
+          <div className="flex flex-col lg:flex-row  items-center justify-center py-9 px-7 lg:px-8 gap-6 shadow-md">
             <Lastcards
               btn={<Connectbtn color="bg-lime-300" title="Free Forever" />}
               title="Free Starter"
