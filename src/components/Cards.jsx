@@ -15,14 +15,14 @@ function Cards({
   feature,
 }) {
   return (
-    <div className=" flex flex-col  items-center justify-center   bg-white shadow-md px-20 py-10 ">
+    <div className=" flex flex-col w-full   items-center justify-center   bg-white shadow-md px-20 py-10 ">
       <div className="flex flex-col gap-2 ">
-        <p className="font-semibold text-2xl">{title}</p>
+        <p className="font-semibold sm:text-2xl lg:text-xl">{title}</p>
         <p className="text-xs">{amnt}</p>
         <p className="text-xl">{amunt2}</p>
         <p>{button}</p>
       </div>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 py-4">
         <p>{subtitle}</p>
         <p className="flex gap-2">
           <CiUser />

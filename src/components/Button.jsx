@@ -5,11 +5,11 @@ function Button({ color }) {
     <div>
       <button
         className={
-          " text-white w-32 h-8 rounded-md flex items-center justify-center gap-6 text-xl " +
+          " text-white w-32 h-8 rounded-md text-xs font-semibold flex items-center justify-center gap-6  " +
           color
         }
       >
-        title
+        Get Started
         <FaLongArrowAltRight size={30} />
       </button>
     </div>

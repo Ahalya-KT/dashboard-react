@@ -5,6 +5,8 @@ import Cards from "../components/Cards";
 import Button from "../components/Button";
 import Lastcards from "../components/Lastcards";
 import Connectbtn from "../components/Connectbtn";
+import { FaBell } from "react-icons/fa";
+import { AiOutlinePlus } from "react-icons/ai";
 
 function Home() {
   return (
@@ -13,11 +15,12 @@ function Home() {
       <Navbar />
 
       <div className="flex">
-        {/* sidebar */}
+        {/* sidebar div1 */}
         <div className="">
           <Sidebar />
         </div>
 
+        {/* div2 */}
         <div>
           <div>
             <p className="text-2xl font-semibold py-14 px-12">
@@ -27,7 +30,7 @@ function Home() {
           </div>
 
           {/* cards */}
-          <div className="flex py-10 px-20 items-center justify-center gap-10">
+          <div className="flex flex-col lg:flex-row px-20 items-center justify-center gap-10 ">
             <Cards
               title="Basic"
               amnt="$89.99/mo"
@@ -66,7 +69,7 @@ function Home() {
           </div>
 
           {/* last cards */}
-          <div className="flex items-center justify-center px-32 gap-4 shadow-md">
+          <div className="flex  flex-col lg:flex-row  items-center justify-center px-20 py-9 gap-6 shadow-md">
             <Lastcards
               btn={<Connectbtn color="bg-lime-300" />}
               title="Free Starter"
@@ -90,6 +93,16 @@ function Home() {
               mail="Email Support"
               about="Customization of all other features"
             />
+          </div>
+        </div>
+
+        {/* div 3 */}
+        <div className=" bg-teal-50 w-28 relative">
+          <div className="p-5">
+            <FaBell size={25} className="text-blue-700 bg-white" />
+          </div>
+          <div className="p-5 absolute bottom-56 ">
+            <AiOutlinePlus size={25} className="text-pink-500 " />
           </div>
         </div>
       </div>

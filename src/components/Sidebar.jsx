@@ -10,7 +10,7 @@ import { IoIosLogOut } from "react-icons/io";
 
 function Sidebar() {
   return (
-    <div className="py-1 w-56 bg-white shadow-md ">
+    <div className="py-1 w-56 bg-white shadow-md hidden lg:block h-full  relative">
       {/* profile */}
       <div className="bg-white shadow-md w-56 h-44 px-5 py-5 ">
         <div className="pl-9">
@@ -61,7 +61,7 @@ function Sidebar() {
           icons={<MdContactSupport size={30} className="text-cyan-500 pt-2" />}
         />
 
-        <div className=" bg-white shadow-md flex items-center justify-center gap-3 font-medium py-10">
+        <div className="  flex items-center justify-center gap-3 font-medium  absolute bottom-7 px-14">
           <p>LOG OUT</p>
           <IoIosLogOut size={30} className="text-cyan-500 " />
         </div>

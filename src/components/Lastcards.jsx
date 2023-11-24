@@ -16,8 +16,8 @@ function Lastcards({
   about,
 }) {
   return (
-    <div className="flex items-center justify-center px-5    h-56  bg-white shadow-md  gap-5">
-      <div className="flex flex-col gap-2 w-1/2">
+    <div className="flex items-center w-full justify-center px-5   h-56  bg-white shadow-md  gap-10">
+      <div className="flex flex-col gap-4 w-1/2  ">
         {/* connect btn */}
         <p>{btn}</p>
         <p className="text-2xl font-semibold">{title}</p>
