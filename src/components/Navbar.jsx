@@ -4,7 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 function Navbar() {
   return (
-    <div className=" lg: flex justify-between items-center  bg-teal-50 ">
+    <div className=" lg: flex justify-between items-center bg-teal-50  ">
       <div className="w-32 bg-white pl-5 pt-3">
         <img
           className="w-20"
@@ -16,11 +16,11 @@ function Navbar() {
         </div> */}
       </div>
 
-      <nav className=" lg: flex pr-10 gap-2">
-        <div className=" lg: bg-slate-50 shadow-md h-10 w-44 pl-3 pt-2 rounded-md">
-          <p className=" lg: font-semibold">Xyz@entrances.com</p>
+      <nav className=" lg:flex pr-10 gap-2">
+        <div className="  bg-slate-50 shadow-md h-10 w-44 pl-3 pt-2 rounded-md">
+          <p className="  font-semibold">Xyz@entrances.com</p>
         </div>
-        <div className=" lg: bg-slate-50 shadow-md rounded-md h-10 w-10 flex justify-center items-center  ">
+        <div className="  bg-slate-50 shadow-md rounded-md h-10 w-10 flex justify-center items-center  ">
           <IoIosArrowDown />
         </div>
       </nav>

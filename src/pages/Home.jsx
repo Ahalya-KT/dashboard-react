@@ -16,12 +16,12 @@ function Home() {
 
       <div className="flex">
         {/* sidebar div1 */}
-        <div className="">
+        <div>
           <Sidebar />
         </div>
 
         {/* div2 */}
-        <div>
+        <div className="w-full">
           <div>
             <p className="text-2xl font-semibold py-14 px-12">
               Choose a plan that's just right for you
@@ -30,7 +30,7 @@ function Home() {
           </div>
 
           {/* cards */}
-          <div className="flex flex-col lg:flex-row px-20 items-center justify-center gap-10 ">
+          <div className="flex flex-col lg:flex-row lg:px-20 px-5 items-center justify-center gap-10 ">
             <Cards
               title="Basic"
               amnt="$89.99/mo"
@@ -69,7 +69,7 @@ function Home() {
           </div>
 
           {/* last cards */}
-          <div className="flex  flex-col lg:flex-row  items-center justify-center px-20 py-9 gap-6 shadow-md">
+          <div className="flex flex-row  items-center justify-centerlg:px-20 lg:py-9 px-8 gap-6 shadow-md">
             <Lastcards
               btn={<Connectbtn color="bg-lime-300" title="Free Forever" />}
               title="Free Starter"
@@ -97,11 +97,11 @@ function Home() {
         </div>
 
         {/* div 3 */}
-        <div className=" bg-teal-50 w-28 relative">
+        <div className=" bg-teal-50 w-28 relative hidden lg:block">
           <div className="p-5">
             <FaBell size={25} className="text-blue-700 bg-white" />
           </div>
-          <div className="p-5 absolute bottom-56 ">
+          <div className="p-5 absolute bottom-56  ">
             <AiOutlinePlus size={25} className="text-pink-500 " />
           </div>
         </div>
