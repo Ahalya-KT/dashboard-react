@@ -1,6 +1,11 @@
 import React from "react";
+import { CiUser } from "react-icons/ci";
+import { TiCloudStorageOutline } from "react-icons/ti";
+import { MdOutlineMailOutline } from "react-icons/md";
+import Connectbtn from "./Connectbtn";
 
 function Lastcards({
+  btn,
   title,
   subtitle,
   button,
@@ -11,18 +16,29 @@ function Lastcards({
   about,
 }) {
   return (
-    <div className="flex items-center justify-center px-6  bg-white shadow-md  gap-5">
+    <div className="flex items-center justify-center px-5    h-56  bg-white shadow-md  gap-5">
       <div className="flex flex-col gap-2 w-1/2">
+        {/* connect btn */}
+        <p>{btn}</p>
         <p className="text-2xl font-semibold">{title}</p>
-        <p className="w-56">{subtitle}</p>
+        <p className="text-xs">{subtitle}</p>
         <p>{button}</p>
       </div>
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-col gap-1 text-xs">
         <p>{category}</p>
-        <p>{user}</p>
-        <p>{store}</p>
-        <p>{mail}</p>
-        <p className="w-96">{about}</p>
+        <p className="flex gap-3">
+          <CiUser />
+          {user}
+        </p>
+        <p className="flex gap-3">
+          <TiCloudStorageOutline />
+          {store}
+        </p>
+        <p className="flex gap-3">
+          <MdOutlineMailOutline />
+          {mail}
+        </p>
+        <p className="text-xs break-words ">{about}</p>
       </div>
     </div>
   );

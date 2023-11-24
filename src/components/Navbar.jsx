@@ -9,6 +9,9 @@ function Navbar() {
           className="w-20"
           src="https://png.pngtree.com/png-clipart/20211116/original/pngtree-letter-p-logo-design-vector-png-png-image_6943111.png"
         />
+        {/* <div className="flex justify-center py-20">
+          <div className="w-0 h-0 border-t-[75px] border-t-red-500 border-r-[50px] border-r-transparent"></div>
+        </div> */}
       </div>
 
       <nav className=" lg: flex pr-10 gap-2">

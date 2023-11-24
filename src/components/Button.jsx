@@ -1,9 +1,14 @@
 import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
-function Button() {
+function Button({ color }) {
   return (
     <div>
-      <button className=" bg-red-300 text-white w-32 h-8 rounded-md flex items-center justify-center gap-6 text-xl">
+      <button
+        className={
+          " text-white w-32 h-8 rounded-md flex items-center justify-center gap-6 text-xl " +
+          color
+        }
+      >
         title
         <FaLongArrowAltRight size={30} />
       </button>

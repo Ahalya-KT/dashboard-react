@@ -10,9 +10,9 @@ import { IoIosLogOut } from "react-icons/io";
 
 function Sidebar() {
   return (
-    <div className="py-1 w-56 ">
+    <div className="py-1 w-56 bg-white shadow-md ">
       {/* profile */}
-      <div className="bg-white shadow-md w-52 h-44 px-5 py-5 ">
+      <div className="bg-white shadow-md w-56 h-44 px-5 py-5 ">
         <div className="pl-9">
           <img
             className="rounded-full w-16 h-16"
@@ -30,48 +30,36 @@ function Sidebar() {
 
       {/* profile items */}
       <div className=" flex flex-col gap-5 py-5 w-52 rounded-md">
-        <div className="border-r border-t border-b h-16 rounded-md hover:bg-sky-500 hover:ring-sky-500">
-          <SidebarBtn
-            title="Dashboard"
-            icons={<MdDashboard size={30} className="text-cyan-500 pt-2" />}
-          />
-        </div>
+        <SidebarBtn
+          title="Dashboard"
+          icons={<MdDashboard size={30} className="text-cyan-500 pt-2" />}
+        />
 
-        <div className="pr-14 border-r border-t border-b h-14 rounded-md hover:bg-sky-500 hover:ring-sky-500">
-          <SidebarBtn
-            title="Perk"
-            icons={
-              <PiPottedPlantDuotone size={30} className="text-cyan-500 pt-2" />
-            }
-          />
-        </div>
+        <SidebarBtn
+          title="Perk"
+          icons={
+            <PiPottedPlantDuotone size={30} className="text-cyan-500 pt-2" />
+          }
+        />
 
-        <div className="pr-9 border-r border-t border-b h-14 rounded-md hover:bg-sky-500 hover:ring-sky-500">
-          <SidebarBtn
-            title="Addons"
-            icons={
-              <AiOutlineSlackSquare size={30} className="text-cyan-500 pt-2" />
-            }
-          />
-        </div>
+        <SidebarBtn
+          title="Addons"
+          icons={
+            <AiOutlineSlackSquare size={30} className="text-cyan-500 pt-2" />
+          }
+        />
 
-        <div className="pr-14 border-r border-t border-b h-14 rounded-md hover:bg-sky-500 hover:ring-sky-500">
-          <SidebarBtn
-            title="FAQ"
-            icons={
-              <RiQuestionnaireFill size={30} className="text-cyan-500 pt-2" />
-            }
-          />
-        </div>
+        <SidebarBtn
+          title="FAQ"
+          icons={
+            <RiQuestionnaireFill size={30} className="text-cyan-500 pt-2" />
+          }
+        />
 
-        <div className="pr-8 border-r border-t border-b h-14 rounded-md hover:bg-sky-500 hover:ring-sky-500 ">
-          <SidebarBtn
-            title="Support"
-            icons={
-              <MdContactSupport size={30} className="text-cyan-500 pt-2" />
-            }
-          />
-        </div>
+        <SidebarBtn
+          title="Support"
+          icons={<MdContactSupport size={30} className="text-cyan-500 pt-2" />}
+        />
 
         <div className=" bg-white shadow-md flex items-center justify-center gap-3 font-medium py-10">
           <p>LOG OUT</p>

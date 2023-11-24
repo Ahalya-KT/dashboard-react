@@ -1,4 +1,7 @@
 import React from "react";
+import { CiUser } from "react-icons/ci";
+import { TiCloudStorageOutline } from "react-icons/ti";
+import { MdOutlineMailOutline } from "react-icons/md";
 
 function Cards({
   title,
@@ -12,8 +15,8 @@ function Cards({
   feature,
 }) {
   return (
-    <div className=" flex flex-col  items-center justify-center   bg-white shadow-md ">
-      <div className="flex flex-col gap-2">
+    <div className=" flex flex-col  items-center justify-center   bg-white shadow-md px-20 py-10 ">
+      <div className="flex flex-col gap-2 ">
         <p className="font-semibold text-2xl">{title}</p>
         <p className="text-xs">{amnt}</p>
         <p className="text-xl">{amunt2}</p>
@@ -21,9 +24,17 @@ function Cards({
       </div>
       <div className="flex flex-col gap-2">
         <p>{subtitle}</p>
-        <p>{user}</p>
-        <p>{storage}</p>
-        <p>{email}</p>
+        <p className="flex gap-2">
+          <CiUser />
+          {user}
+        </p>
+        <p className="flex gap-2">
+          <TiCloudStorageOutline /> {storage}
+        </p>
+        <p className="flex gap-2">
+          <MdOutlineMailOutline />
+          {email}
+        </p>
         <p>{feature}</p>
       </div>
     </div>

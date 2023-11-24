@@ -4,6 +4,7 @@ import Sidebar from "../components/Sidebar";
 import Cards from "../components/Cards";
 import Button from "../components/Button";
 import Lastcards from "../components/Lastcards";
+import Connectbtn from "../components/Connectbtn";
 
 function Home() {
   return (
@@ -13,7 +14,7 @@ function Home() {
 
       <div className="flex">
         {/* sidebar */}
-        <div>
+        <div className="">
           <Sidebar />
         </div>
 
@@ -26,16 +27,16 @@ function Home() {
           </div>
 
           {/* cards */}
-          <div className="flex px-20">
+          <div className="flex py-10 px-20 items-center justify-center gap-10">
             <Cards
               title="Basic"
               amnt="$89.99/mo"
               amunt2="$9.99/mo"
-              button={<Button />}
+              button={<Button color="bg-orange-200" />}
               subtitle="What you'll get:"
               user="Upto 25 Users"
               storage="Upto 25gb Storage"
-              Email="Email Support"
+              email="Email Support"
               feature="EXPLORE FEATURES"
             />
 
@@ -43,11 +44,11 @@ function Home() {
               title="Standard"
               amnt="$189.99/mo"
               amunt2="$99.99/mo"
-              button={<Button />}
+              button={<Button color="bg-rose-400" />}
               subtitle="What you'll get:"
               user="Upto 50 Users"
               storage="Upto 60gb Storage"
-              Email="Email+Chat Support"
+              email="Email+Chat Support"
               feature="EXPLORE FEATURES"
             />
 
@@ -55,21 +56,22 @@ function Home() {
               title="Premium"
               amnt="$389.99/mo"
               amunt2="$199.99/mo"
-              button={<Button />}
+              button={<Button color="bg-purple-400" />}
               subtitle="What you'll get:"
               user="Upto 75 Users"
               storage="Upto 100gb Storage"
-              Email="Email+Chat+Whatsapp Support"
+              email="Email+Chat+Whatsapp Support"
               feature="EXPLORE FEATURES"
             />
           </div>
 
           {/* last cards */}
-          <div className="flex gap-4 py-10">
+          <div className="flex items-center justify-center px-32 gap-4 shadow-md">
             <Lastcards
+              btn={<Connectbtn color="bg-lime-300" />}
               title="Free Starter"
               subtitle="The quickest and easiest way to try protocols with basic functionalitiies "
-              button={<Button />}
+              button={<Button color="bg-purple-400" />}
               category="What you'll get"
               user="upto 8 users"
               store="Upto 3gb storage"
@@ -78,9 +80,10 @@ function Home() {
             />
 
             <Lastcards
+              btn={<Connectbtn color="bg-lime-300" />}
               title="Enterprise plan"
               subtitle="Effortiessly customise and fine-tune services as your needs shifts,ensuring the perfect tools for succesS "
-              button={<Button />}
+              button={<Button color="bg-cyan-500" />}
               category="What you'll get"
               user="upto 8 users"
               store="Upto 3gb storage"
