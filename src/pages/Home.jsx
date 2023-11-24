@@ -7,7 +7,7 @@ import Lastcards from "../components/Lastcards";
 
 function Home() {
   return (
-    <div>
+    <div className="w-full">
       {/* navbar */}
       <Navbar />
 
@@ -26,76 +26,67 @@ function Home() {
           </div>
 
           {/* cards */}
-          <div className="flex w-1/3 gap-16 px-20">
-            <div className="">
-              <Cards
-                title="Basic"
-                amnt="$89.99/mo"
-                amunt2="$9.99/mo"
-                button={<Button />}
-                subtitle="What you'll get:"
-                user="Upto 25 Users"
-                storage="Upto 25gb Storage"
-                Email="Email Support"
-                feature="EXPLORE FEATURES"
-              />
-            </div>
+          <div className="flex px-20">
+            <Cards
+              title="Basic"
+              amnt="$89.99/mo"
+              amunt2="$9.99/mo"
+              button={<Button />}
+              subtitle="What you'll get:"
+              user="Upto 25 Users"
+              storage="Upto 25gb Storage"
+              Email="Email Support"
+              feature="EXPLORE FEATURES"
+            />
 
-            <div className="">
-              <Cards
-                title="Standard"
-                amnt="$189.99/mo"
-                amunt2="$99.99/mo"
-                button={<Button />}
-                subtitle="What you'll get:"
-                user="Upto 50 Users"
-                storage="Upto 60gb Storage"
-                Email="Email+Chat Support"
-                feature="EXPLORE FEATURES"
-              />
-            </div>
+            <Cards
+              title="Standard"
+              amnt="$189.99/mo"
+              amunt2="$99.99/mo"
+              button={<Button />}
+              subtitle="What you'll get:"
+              user="Upto 50 Users"
+              storage="Upto 60gb Storage"
+              Email="Email+Chat Support"
+              feature="EXPLORE FEATURES"
+            />
 
-            <div className="">
-              <Cards
-                title="Premium"
-                amnt="$389.99/mo"
-                amunt2="$199.99/mo"
-                button={<Button />}
-                subtitle="What you'll get:"
-                user="Upto 75 Users"
-                storage="Upto 100gb Storage"
-                Email="Email+Chat+Whatsapp Support"
-                feature="EXPLORE FEATURES"
-              />
-            </div>
+            <Cards
+              title="Premium"
+              amnt="$389.99/mo"
+              amunt2="$199.99/mo"
+              button={<Button />}
+              subtitle="What you'll get:"
+              user="Upto 75 Users"
+              storage="Upto 100gb Storage"
+              Email="Email+Chat+Whatsapp Support"
+              feature="EXPLORE FEATURES"
+            />
           </div>
 
           {/* last cards */}
-          <div className="flex">
-            <div className="py-14 px-20 ">
-              <Lastcards
-                title="Free Starter"
-                subtitle="The quickest and easiest way to try protocols with basic functionalitiies "
-                button={<Button />}
-                category="What you'll get"
-                user="upto 8 users"
-                store="Upto 3gb storage"
-                mail="Email Support"
-                about="Basic of Documents,Tasks Flow,Voting,Accounting,Banking,Notes,Investor,Director and Team Management included"
-              />
-            </div>
-            <div className="py-14 px-20">
-              <Lastcards
-                title="Enterprise plan"
-                subtitle="Effortiessly customise and fine-tune services as your needs shifts,ensuring the perfect tools for succesS "
-                button={<Button />}
-                category="What you'll get"
-                user="upto 8 users"
-                store="Upto 3gb storage"
-                mail="Email Support"
-                about="Customization of all other features"
-              />
-            </div>
+          <div className="flex gap-4 py-10">
+            <Lastcards
+              title="Free Starter"
+              subtitle="The quickest and easiest way to try protocols with basic functionalitiies "
+              button={<Button />}
+              category="What you'll get"
+              user="upto 8 users"
+              store="Upto 3gb storage"
+              mail="Email Support"
+              about="Basic of Documents,Tasks Flow,Voting,Accounting,Banking,Notes,Investor,Director and Team Management included"
+            />
+
+            <Lastcards
+              title="Enterprise plan"
+              subtitle="Effortiessly customise and fine-tune services as your needs shifts,ensuring the perfect tools for succesS "
+              button={<Button />}
+              category="What you'll get"
+              user="upto 8 users"
+              store="Upto 3gb storage"
+              mail="Email Support"
+              about="Customization of all other features"
+            />
           </div>
         </div>
       </div>

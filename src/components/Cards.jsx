@@ -12,7 +12,7 @@ function Cards({
   feature,
 }) {
   return (
-    <div className=" flex flex-col  items-center justify-center  w-80 h-80 bg-white shadow-md ">
+    <div className=" flex flex-col  items-center justify-center   bg-white shadow-md ">
       <div className="flex flex-col gap-2">
         <p className="font-semibold text-2xl">{title}</p>
         <p className="text-xs">{amnt}</p>

@@ -12,7 +12,7 @@ function Lastcards({
 }) {
   return (
     <div className="flex items-center justify-center px-6  bg-white shadow-md  gap-5">
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 w-1/2">
         <p className="text-2xl font-semibold">{title}</p>
         <p className="w-56">{subtitle}</p>
         <p>{button}</p>
