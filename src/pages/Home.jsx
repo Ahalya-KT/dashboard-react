@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Cards from "../components/Cards";
@@ -9,14 +9,19 @@ import { FaBell } from "react-icons/fa";
 import { AiOutlinePlus } from "react-icons/ai";
 
 function Home() {
+  const [showNavbar, setshowNavbar] = useState(false);
+  const toggleNavbar = () => {
+    setshowNavbar(!showNavbar);
+  };
+
   return (
     <div className="w-full">
       {/* navbar */}
-      <Navbar />
+      <Navbar toggleNavbar={toggleNavbar} />
 
-      <div className="flex">
+      <div className="flex ">
         {/* sidebar div1 */}
-        <div>
+        <div className={`${!showNavbar && "hidden"} lg:block`}>
           <Sidebar />
         </div>
 

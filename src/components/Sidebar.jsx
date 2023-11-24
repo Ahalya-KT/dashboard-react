@@ -10,7 +10,7 @@ import { IoIosLogOut } from "react-icons/io";
 
 function Sidebar() {
   return (
-    <div className="py-1 w-56 bg-white shadow-md hidden lg:block h-full  relative">
+    <div className="py-1 w-56 bg-white shadow-md  h-full  relative">
       {/* profile */}
       <div className="bg-white shadow-md w-56 h-44 px-5 py-5 ">
         <div className="pl-9">
